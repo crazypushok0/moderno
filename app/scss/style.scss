@@ -1,8 +1,67 @@
-html{
-    box-sizing: border-box;
+@import 'fonts';
+@import 'vars';
+@import 'global';
+ 
+
+.header__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 90px;
 }
-*,
-*::before,
-*::after{
-    box-sizing: inherit;
+.header__text{
+    margin-left: auto;
+    margin-right: 25px;
+    color: $text;
+    a{
+        color: $text;
+        span{
+            color:$red;
+        }
+    }
 }
+.header__box-btn{
+    a{
+        color:#fff;
+        font-size: 12px;
+        padding:10px 5px;
+        text-align: center;
+        border-radius: 4px;
+        width: 70px;
+        &.basket{
+            display: none;
+        }
+        &.login-btn{
+            background-color: $green;
+            margin-right: 7px;
+        }
+        &.register-btn{
+            background-color: $red;
+        }
+    }
+}
+.header__menu{
+    background-color:$bg;
+    font-family: 'Roboto-Medium', sans-serif;
+    font-weight: 500;
+    &-inner{
+        min-height: 60px;
+        display: flex;
+        align-items: center;
+    }
+}
+.menu__list{
+    li{
+        margin:10px 37px 10px 0;
+    }
+    a{
+        color:#fff;
+        font-size: 14px;
+    }
+}
+
+
+
+
+@import 'media';
+
