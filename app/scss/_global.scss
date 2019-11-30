@@ -17,6 +17,9 @@ li{
   padding: 0;
   display: inline-block;
 }
+button:focus{
+  outline: none;
+}
 body{
   font-family: 'Roboto-Regular', sans-serif;
   color: $text;

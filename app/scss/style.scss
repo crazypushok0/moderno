@@ -110,12 +110,17 @@
                 }
             }
             button{
-                top: 13px;
-                right: 13px;
+                bottom:0;
+                right: 0;
                 border: none;
                 position: absolute;
                 background-color: transparent;
                 cursor: pointer;
+                width: 56px;
+                height: 56px;
+                &:focus{
+                 outline: none;
+                }
             }
         }
     }
@@ -147,6 +152,7 @@
         &.mixitup-control-active{
             background-color: $red;
             color: #fff;
+            box-shadow: 0 2px 5px rgba(202, 215, 228, 0.75);
         }
     }
 }
@@ -221,8 +227,16 @@
             font-size: 14px;
         }
     }
+    &-star{
+        span{
+            color:$bg;
+        }
+    }
 }
-
+.rate-star{
+    display: inline-block;
+    margin-right: 13px;
+}
 .products__bottom-btn{
     margin-top: 60px;
     text-align: center;
@@ -243,6 +257,38 @@
 }
 
 // end products
+// start products-slider
+.products-slider{
+    padding: 120px 0;
+    &__inner{
+        text-align: center;
+    }
+}
+.slick-dots{
+    margin-top: 50px;
+    li{
+        width: 16px;
+        height: 16px;
+        margin-left: 3px;
+        margin-right: 3px;
+        &.slick-active{
+            button{
+                background-color: $green;
+            }
+        }
+    }
+    button{
+        border:none;
+        width: 16px;
+        height: 16px;
+        border-radius: 50px;
+        font-size: 0;
+        background-color: #e8e8e8;
+        outline: none;
+    }
+}
+
+// enp products-slider
 
 
 @import 'media';
