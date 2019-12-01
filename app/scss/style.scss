@@ -578,6 +578,19 @@
 }
 // end footer
 
+// start page new-items
+.page-new__items{
+    min-height: 230px;
+    .search__inner{
+        padding: 57px 0 63px;
+    }
+    .search__inner-text{
+        margin-bottom: 24px;
+    }
+}
+
+// end page new-items
+
 
 @import 'media';
 
