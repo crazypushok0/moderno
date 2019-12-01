@@ -17,8 +17,11 @@ li{
   padding: 0;
   display: inline-block;
 }
-button:focus{
+button{
+  cursor: pointer;
+  &:focus{
   outline: none;
+}
 }
 body{
   font-family: 'Roboto-Regular', sans-serif;
