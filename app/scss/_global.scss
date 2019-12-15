@@ -19,7 +19,6 @@ li{
   list-style: none;
   margin: 0;
   padding: 0;
-  display: inline-block;
 }
 button{
   cursor: pointer;
@@ -60,7 +59,12 @@ body{
     padding: 0 15px;
   }
 }
-
+header{
+  background: #fff;
+}
+.page-content{
+  background:$grey;
+}
 .title{
   color:$bg;
   font-family: 'Roboto-Bold', sans-serif;
@@ -78,6 +82,7 @@ body{
     li{
       position: relative;
       padding-left: 24px;
+      display: inline-block;
       & + li{
         &::before{
           content: '-';
