@@ -775,6 +775,7 @@
     .icon-th-large,
     .icon-th-list{
         font-size: 16px;
+        color: #90a4ae;
     }
     .icon-unsorted{
         font-size: 18px;
@@ -782,6 +783,7 @@
     }
     .icon-sort-amount-desc{
         margin-right: 10px;
+        color: #455a64;
     }
     .active{
         color:$green;
@@ -792,7 +794,8 @@
     justify-content: space-between;
     flex-wrap: wrap;
     .product__item{
-        width: 269px;
+        max-width: 269px;
+        transition: all .5s;
         &-img{
             min-height: 180px;
         }
@@ -820,9 +823,13 @@
     margin-top: 30px;
     &__list{
         li{
-            display: inline-block;  
+            display: inline-block;
+            & + li{
+                margin-left: 6px;
+            }  
         }
-        a{
+        a,
+        span{
             width: 43px;
             height: 38px;
             background-color: #fff;
@@ -831,11 +838,90 @@
             justify-content: center;
             align-items: center;
             color:$bg;
+            font-size: 16px;
+            @include f500;
+            &.active{    
+                background-color: $red;
+                color:#fff;
+            }
         } 
-        .active{    
-            background-color: $red;
-            color:#fff;
-        }  
+  
+    }
+}
+.product__item-text{
+    display: none;
+    font-size: 14px;
+    color: #70838d;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.product__item-price{
+    span{
+        display: none;
+        color: #aeb4bb;
+        font-size: 13px;
+        margin-top: 22px;
+        @include f400;
+    }
+}
+.product__item-list{
+    display: none;
+    .icon-heart-o,
+    .icon-comment-o{
+        display: inline-block;
+        font-size: 12px;
+        color: $text;
+        padding-left: 50px;
+        border-left: 2px solid #aeb4bb;
+        position: relative;
+        span{
+            @include f500;
+            color:$bg;
+        }
+        &::before{
+            position: absolute;
+            font-size: 16px;
+            color:$green;
+            left: 20px;
+            top: 0px;
+        }
+    }
+    .icon-comment-o{
+        padding-right: 30px;
+        &::before{
+            top: -2px;
+        }
+    }
+}
+.product__item{
+    &.list{
+        max-width: 100%;
+        .product__item-img{
+            float: left;
+            width: 240px;
+        }
+        .product__item-content{
+            padding-top:15px;
+        }
+        .product__item-name {
+            max-width: 400px;
+            .product__item-text{
+                display: block;
+            }
+        }
+        .product__item-price{
+            font-size: 30px;
+            span{
+                display: block;
+            }
+        }
+        .product__item-list{
+            display: block;
+        }
+        .product__item-star{
+            margin-left: auto;
+            margin-right: 30px;
+        }
     }
 }
 

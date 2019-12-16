@@ -19,6 +19,16 @@ $(function(){
     to: 600,
     prefix: "$"
 });
+  $(".icon-th-list").on("click", function(){
+    $(".page-products__items > .product__item").addClass("list");
+    $(".icon-th-large").removeClass("active");
+    $("button.icon-th-list").addClass("active");
+  });
+  $(".icon-th-large").on("click", function(){
+    $(".page-products__items > .product__item").removeClass("list");
+    $(".icon-th-list").removeClass("active");
+    $("button.icon-th-large").addClass("active");
+  });
 var mixer = mixitup('.products__inner-box');
 
 
