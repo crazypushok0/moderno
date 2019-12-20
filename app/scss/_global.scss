@@ -82,9 +82,9 @@ header{
   &__list{
     li{
       position: relative;
-      padding-left: 24px;
       display: inline-block;
       & + li{
+        padding-left: 24px;
         &::before{
           content: '-';
           position: absolute;
