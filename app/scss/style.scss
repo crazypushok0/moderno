@@ -1670,5 +1670,78 @@
 }
 //end product-one
 
+//start page 404
+
+.page__404-wrapper{
+    padding-bottom: 150px;
+    
+}
+.page__404-head{
+    color:#444;
+    font-size: 24px;
+    @include f500;
+    max-width: 1170px;
+    width: 100%;
+    background-color: #fff;
+    height: 70px;
+    border: 1px solid #d7d7d7;
+    border-bottom: none ;
+    padding: 23px 0 23px 29px;
+}
+.page__404-inner{
+    background-color:$green;
+    border: 1px solid #d7d7d7;
+    border-top: none;
+    text-align: center;
+    color: #fff;
+    padding: 115px 0px 100px;
+}
+.page__404-code{
+    font-size: 300px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    position: relative;
+    padding-left: 256px;
+    text-align: left;
+    margin-bottom: 60px;
+    line-height: 240px;
+    img{
+        position: absolute;
+        right: 220px;
+        top: -50px;
+    }
+}
+.page__404-title{
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 6px;
+    margin-bottom: 33px;
+}
+.page__404-text{
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    max-width: 530px;
+    margin: 0 auto;
+    margin-bottom: 55px;
+}
+.page__404-link{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    width: 210px;
+    height: 55px;
+    padding: 18px 0;
+    
+}
+
+//end page 404
+
 @import 'media';
 
