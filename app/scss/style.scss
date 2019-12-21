@@ -1829,6 +1829,7 @@
         background-color: #f1f4f5;
         border: none;
         padding-left: 17px;
+        padding-right: 17px;
         font-size: 15px;
         color:#000;
         &::placeholder{
@@ -1899,10 +1900,14 @@
 
     }
 }
-.contact__us-phone,
-.contact__us-mail{
+.contact__us-phone{
     .contact__us-title::before{
         content: '\f095';
+    }  
+}
+.contact__us-mail{
+    .contact__us-title::before{
+        content: '\f003';
     }
 }
 .contact__us-content{
@@ -1917,5 +1922,94 @@
     margin-bottom: 23px;
 }
 //end contact us
+//start settings
+
+.settings__inner{
+    padding-bottom: 150px;
+}
+.settings__tabs{
+    display: flex;
+    .tabs{
+        max-width: 270px;
+        width: 100%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        border: none;
+        margin-right: 30px;
+        text-align-last: left;
+        .tab{
+            padding: 19px 0 20px 50px;
+            border: 1px solid #d7d7d7;
+            color: #707070;
+            font-size: 14px;
+            @include f500;
+            position: relative;
+            &::before{
+                content: '\f105';
+                position: absolute;
+                left: 23px;
+                font-family: 'icomoon';
+                font-size: 14px;
+                font-weight: 400;
+            }
+            & + .tab{
+                border-top: none;
+            }
+            &.active{
+                color: #37474f;
+                border-bottom: 2px solid $green;
+                &::before{
+                    color: $green;;
+                }
+            }
+        }
+    }
+    .tab_content{
+        width: 100%;
+        border: 1px solid #d7d7d7;
+        padding: 21px 0 80px;
+        .settings__tabs-name{
+            font-size: 24px;
+            color:$bg;
+            @include f500;
+            padding-bottom: 25px;
+            padding-left: 34px;
+            border-bottom: 1px solid #d7d7d7;
+        }
+        form{
+            padding: 33px 37px 0px 38px;
+            .settings__tabs-line{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 21px;
+            }
+        }
+        label{
+            color:#444;
+        }
+        input,
+        select{
+            width: 540px;
+            height: 40px;
+            border: 1px solid #d7d7d7;
+            background-color: #f9f9f9;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        button{
+            width: 108px;
+            height: 46px;
+            border:none;
+            color:#fff;
+            @include f500;
+            background-color: $green;
+            margin-left: 254px;
+        }
+    }
+}
+
+//end settings
 @import 'media';
 
