@@ -1938,6 +1938,7 @@
         border: none;
         margin-right: 30px;
         text-align-last: left;
+        height: 100%;
         .tab{
             padding: 19px 0 20px 50px;
             border: 1px solid #d7d7d7;
@@ -2011,5 +2012,241 @@
 }
 
 //end settings
+
+//start profile author
+
+.profile__inner{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.profile__status{
+    font-size: 13px;
+    color: #70838d;
+    border: 1px solid #cccccc;
+    padding: 7px 10px 7px 27px;
+    position: relative;
+    margin-top: 13px;
+    &::before{
+        content: '';
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background-color:$red;
+        position: absolute;
+        left: 10px;
+        top: 9px;
+    }
+    &.profile-on::before{
+        background-color: $green;
+    }
+
+}
+.profile-social{
+    margin-bottom: 29px;
+    a{
+        width: 28px;
+        height: 28px;
+        & + a{
+            margin-left: 7px;
+        }
+        &.social__icon-facebook{
+            background-position: -28px 0;
+        }
+        &.social__icon-twitter{
+            background-position: 0 -28px;
+        }
+        &.social__icon-youtube{
+            background-position: -28px -28px;
+        }
+        &.social__icon-pinterest{
+            background-position: -56px 0;
+        }
+    }
+}
+.profile__aside-btn{
+    a{
+        max-width: 270px;
+        width: 100%;
+        background-color: $green;
+        display: block;
+        color: #fff;
+        font-size: 16px;
+        padding: 20px 0px 16px;
+        text-align: center;
+        @include f700;
+        box-shadow: 0 1px 2px rgba(69, 90, 100, 0.75);
+        & + a{
+            margin-top: 20px;
+        }
+        &.profile__btn-send{
+            background-color:$bg;
+            @include f500;
+            &::before{
+                content: '\f003';
+                font-family: 'icomoon';
+                padding-right: 12px;
+            }
+        }
+    }
+}
+.profile__content{
+    width: 100%;
+    margin-left: 30px;
+}
+.profile__content-banner{
+    background-color: #fff;
+    border: 1px solid #d7d7d7;
+    width: 100%;
+    padding: 19px 20px 17px;
+    margin-bottom: 26px;
+}
+.profile__content-img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 829px;
+    min-height: 332px;
+}
+.profile__content-items{
+    display: flex;
+    width: 100%;
+}
+.profile__content-item{
+    background-color: #fff;
+    padding: 20px 5px 17px;
+    border: 1px solid #d7d7d7;
+    width: 25%;
+    text-align: center;
+    & + .profile__content-item{
+        border-left: none;
+    }
+
+}
+.profile__content-title{
+    font-size: 14px;
+    color:$bg;
+    @include f500;
+    margin-bottom: 9px;
+}
+.profile__content-content{
+    color: #707070;
+    font-size: 14px;
+    span{
+        color:$bg;
+    }
+    &.profile__content-sales{
+        color:$bg;
+    }
+}
+.profile__tabs{
+    display: flex;
+    padding-bottom: 113px;
+    .tabs{
+        max-width: 270px;
+        width: 100%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        border: none;
+        margin-right: 30px;
+        text-align-last: left;
+        height: 100%;
+        .tab{
+            padding: 19px 0 20px 50px;
+            border: 1px solid #d7d7d7;
+            color: #707070;
+            font-size: 14px;
+            @include f500;
+            position: relative;
+            &::before{
+                content: '\f105';
+                position: absolute;
+                left: 23px;
+                font-family: 'icomoon';
+                font-size: 14px;
+                font-weight: 400;
+                color: #d0d0d0;
+            }
+            & + .tab{
+                border-top: none;
+            }
+            &.active{
+                color: $bg;
+                border-bottom: 2px solid $green;
+                &::before{
+                    color: $green;;
+                }
+            }
+        }
+        .tab-about::before{
+            content: '\f007';
+        }
+        .tab-products::before{
+            content: '\f0f2';
+        }
+        .tab-message::before{
+            content: '\f003';
+        }
+        .tab-customer::before{
+            content: '\f0e6';
+        }
+        .tab-followers::before{
+            content: '\f0c0';
+        }
+    }
+    .tab_content{
+        width: 100%;
+        border: 1px solid #d7d7d7;
+        padding: 40px 44px 29px;
+        .profile__tab-name{
+            font-size: 20px;
+            color: $bg;
+            @include f700;
+            margin-bottom: 30px;
+        }
+        .profile__tab-text{
+            color: #707070;
+            line-height: 24px;
+            margin-bottom: 45px;
+        }
+        .profile__tab-title{
+            font-size: 20px;
+            color: $bg;
+            @include f700;
+            margin-bottom: 27px;
+        }
+        .profile__tab-item-box{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 16px;
+        }
+        .profile__tab-item-name{
+            font-size: 16px;
+            font-style: italic;
+            color:$bg;
+            @include f500;
+        }
+        .profile__tab-item-number{
+            font-size: 16px;
+            color: $bg;
+            @include f700;
+        }
+        .profile__tab-item-line{
+            background-color: #f4f4f4;
+            border-radius: 3px;
+            height: 15px;
+            margin-bottom: 23px;
+            span{
+                border-radius: 3px;
+                height: 15px;
+                display: block;
+                background-image: url(../img/progress-bar.png);
+            }
+        }
+    }
+}
+
+//end profile author
 @import 'media';
 
