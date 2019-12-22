@@ -61,7 +61,12 @@ $(function(){
       $(this).addClass('active');
       $('#'+id).addClass('active-tab').fadeIn();
       return false;
-    });    
+    }); 
+  $(function() {
+
+      $('input[type="file"], select').styler();
+    
+  });   
 
 var mixer = mixitup('.products__inner-box');
 
