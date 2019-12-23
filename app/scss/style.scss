@@ -45,7 +45,7 @@
     background-color:$bg;
     @include f500;
     &-inner{
-        min-height: 60px;
+        height: 60px;
         display: flex;
         align-items: center;
     }
@@ -1692,8 +1692,10 @@
 //start page 404
 
 .page__404-wrapper{
-    padding-bottom: 150px;
-    max-width: 1170px;
+    margin-bottom: 150px;
+    width: 100%;   
+    background-color: #fff;
+    border: 1px solid #d7d7d7;
     
 }
 .page__404-head{
@@ -1703,31 +1705,30 @@
     width: 100%;
     background-color: #fff;
     height: 70px;
-    border: 1px solid #d7d7d7;
-    border-bottom: none ;
+    border-bottom: 1px solid #d7d7d7 ;
     padding: 23px 0 23px 29px;
 }
 .page__404-inner{
     background-color:$green;
-    border: 1px solid #d7d7d7;
-    border-top: none;
     text-align: center;
     color: #fff;
-    padding: 115px 0px 100px;
+    padding: 0px 0px 100px;
 }
 .page__404-code{
     font-size: 300px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
     position: relative;
-    padding-left: 256px;
-    text-align: left;
-    margin-bottom: 60px;
-    line-height: 240px;
-    img{
+    padding-top: 70px;
+    margin-bottom: 20px;
+    line-height: 300px;
+    &::after{
         position: absolute;
-        right: 220px;
-        top: -50px;
+        content: '';
+        background-image: url(../img/404.png);
+        width: 160px;
+        height: 292px;
+
     }
 }
 .page__404-title{
