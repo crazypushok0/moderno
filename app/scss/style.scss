@@ -2344,9 +2344,11 @@
         padding: 10px 18px;
     }
 }
+
 .jq-selectbox{
     // max-width: 900px;
     width: 100%;
+    z-index: 0;
     .jq-selectbox__select{
         border-radius: 0;
         box-shadow: none;
