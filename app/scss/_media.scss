@@ -10,6 +10,35 @@
     .withdrawals__items{
       max-width: 492px;
     }
+    .contact__us-form{
+      input{
+        max-width: 100%;
+        & + input{
+          margin-left: 0;
+          margin-top: 28px;
+        }
+      }
+    }
+    .product-one__inner{
+      display: block;
+    }
+    .product-one__content{
+      max-width: 100%;
+      margin-right: 0;
+      padding-bottom: 20px;
+    }
+    .product-one__img{
+      max-width: 100%;
+    }
+    .product-one__more-item{
+      max-width: 47%;
+    }
+    .product-one__aside{
+      padding-bottom: 100px;
+      .aside__item{
+        width: 100%;
+      }
+    }
 
 }
 @media (max-width:1150px){
@@ -31,6 +60,30 @@
     height: 115px;
     background-size: cover;
   }
+  .settings__tabs,
+  .profile__tabs{
+    display: block;
+    .tabs{
+      margin-bottom: 20px;
+      max-width: 100%;
+    }
+    .tab_content{
+      button{
+        margin-left: 0;
+      }
+    }
+  }
+  .profile__inner{
+    flex-direction: column;
+  }
+  .profile__content{
+    margin-left: 0;
+    order: -1;
+    margin-bottom: 30px;
+  }
+  .product-one__author{
+    width: 100%;
+  }
 }
 @media (max-width:900px){
 
@@ -46,6 +99,18 @@
       margin-left: 40px;
     }
   }
+  .contact__us-box{
+    display: block;
+  }
+  .contact__us-form {
+    form{
+      max-width:100%;
+    }
+  }
+  .contact__us-info{
+    margin-bottom: 30px;
+  } 
+
 }
 
 @media (max-width:842px){
@@ -95,6 +160,24 @@
       margin-left: 0;
     }
   }
+  .settings__tabs .tab_content form .settings__tabs-line{
+    flex-direction: column;
+    align-items: flex-start;
+    label{
+      margin-bottom: 15px;
+      display: inline-block;
+    }
+  }
+  .product-one__box{
+    flex-direction: column;
+  }
+  .product-one__link{
+    margin-bottom: 20px;
+  }
+  .product-one__img {
+    min-height: 300px;
+  }
+
 }
 @media (max-width:740px){
   .page__404-code{
@@ -110,7 +193,51 @@
   .basket__menu{
     right: auto;
   }
-
+  .profile__content-img{
+    min-height: 250px;
+  }
+  .profile__content-banner{
+    margin-bottom: 20px;
+  }
+  .profile__content-items{
+    display: block;
+  }
+  .profile__content-item{
+    width: 100%;
+  }
+  .profile__content-item+.profile__content-item{
+    border-top:none;
+    border-left: 1px solid #d7d7d7;
+  }
+  .product-one__more-item{
+    max-width: 100%;
+  }
+  .product-one__tabs{
+    .tabs{
+      flex-direction: column;
+      .tab{
+        & +.tab{
+          border-left:none;
+          border-top: 1px solid #d7d7d7;
+        }
+      }
+    }
+    .tab-item__list{
+      column-count: 1;
+      column-gap: 0px;
+    }
+  }
+  .product-one__link{
+    a{
+      display: block;
+      width: 100%;
+      & + a{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+      }
+    }
+  }
 }
 
 @media (max-width:540px){
@@ -134,12 +261,54 @@
   
   .withdrawals-col-box,
   .upload__inner-content{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .withdrawals-name,
+  .upload__inner-title,
+  .about__us-head,
+  .contact__us-head{
+    padding: 20px;
+  }
+  .page__404-inner{
     padding-left: 10px;
     padding-right: 10px;
   }
-  .withdrawals-name,
-  .upload__inner-title{
-    padding: 20px;
+  .page__404-code{
+    font-size: 150px;
+    line-height: 150px;
+    &::after{
+      width: 47px;
+      height: 90px;
+    }
+  }
+  .page__404-title{
+    font-size: 24px;
+    letter-spacing: 3px;
+  }
+  .page__404-text{
+    font-size: 16px;
+  }
+  .about__us-inner{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .settings__tabs .tab_content{
+    form{
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+      .settings__tabs-name{
+        padding: 0 20px 20px;
+      }   
+  }
+  .contact__us-inner{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .profile__tabs .tab_content{
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -202,6 +371,9 @@
   .basket__menu{
     top: 52px;
   }
+  .product-one__img {
+    min-height: 250px;
+  }
 }
 
 
@@ -218,7 +390,37 @@
   .user__menu{
     top: 52px;
   }
+  .contact__us-map {
+    iframe{
+      height: 250px;
+    }
+  }
 }
+@media (max-width:420px){
+  .page__404-code{
+    font-size: 100px;
+    line-height: 100px;
+    &::after{
+      width: 31px;
+      height: 60px;
+    }
+  }
+  .page__404-title{
+    font-size: 24px;
+    letter-spacing: 3px;
+  }
+  .page__404-text{
+    font-size: 16px;
+  }
+  .page__404-link{
+    width: 200px;
+  }
+  .about__us-inner{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 @media (max-width:400px){
   .header__box-btn{
     &.active{
@@ -236,8 +438,32 @@
     }
   }
   .withdrawals-name,
-  .upload__inner-title{
+  .upload__inner-title,
+  .page__404-head,
+  .about__us-head,
+  .contact__us-head{
     font-size: 20px;
+  }
+  .page__404-head{
+    padding-left: 20px;
+  }
+  .page__404-code{
+    padding-top: 50px;
+  }
+  .page__404-inner{
+    padding-bottom: 70px;
+  }
+  .about__us-title{
+    font-size: 18px;
+  }
+  .settings__tabs .tab_content .settings__tabs-name{
+    font-size: 20px;
+  }
+  .product-one__tabs{
+    .tab_content{
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
 }
 @media (max-width:360px){
@@ -261,16 +487,32 @@
       line-height: 25px;
       font-size: 18px;
   }
-}
-
-@media (max-width:400px){
-  .header__box-btn{
-    &.active{
-     left: 47px; 
+  .upload-line{
+    input,
+    textarea{
+      &::placeholder{
+        font-size: 12px;
+      }
     }
   }
-  .basket__box{
-    margin-right: 0;
+  .jq-selectbox .jq-selectbox__select{
+    font-size: 12px;
+  }
+  .jq-selectbox__dropdown{
+    bottom: auto !important;
+    top: 40px !important;
+  }
+  .product-one__img-wrapp{
+    padding: 10px;
+  }
+  .product-one__img {
+    min-height: 200px;
+}
+}
+
+@media (max-width:320px){
+  .profile__aside-btn a{
+    max-width: 100%;
   }
 }
 

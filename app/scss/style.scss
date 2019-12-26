@@ -1632,8 +1632,6 @@
     padding: 8px 11px;
 }
 .product-one__author-awards-list{
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 4px;
     li{
         background-repeat: no-repeat;
@@ -1643,6 +1641,8 @@
         height: 37px;
         position: relative;
         text-align: center;
+        margin-right: 4px;
+        display: inline-block;
         &::before{
             position: absolute;
             color: #fff;
@@ -1704,7 +1704,7 @@
     @include f500;
     width: 100%;
     background-color: #fff;
-    height: 70px;
+    // height: 70px;
     border-bottom: 1px solid #d7d7d7 ;
     padding: 23px 0 23px 29px;
 }
@@ -1774,7 +1774,7 @@
     @include f500;
     width: 100%;
     background-color: #fff;
-    height: 70px;
+    // height: 70px;
     border: 1px solid #d7d7d7;
     border-bottom: none ;
     padding: 23px 0 23px 29px;
@@ -1811,7 +1811,6 @@
     @include f500;
     width: 100%;
     background-color: #fff;
-    height: 70px;
     border: 1px solid #d7d7d7;
     border-bottom: none ;
     padding: 23px 0 23px 29px;
@@ -1836,7 +1835,8 @@
     margin-top: 60px;
 }
 .contact__us-info{
-    width: 310px;
+    max-width: 310px;
+    width: 100%;
 }
 .contact__us-form{
     form{
@@ -1861,7 +1861,6 @@
         }
     }
     textarea{
-        max-width: 730px;
         width: 100%;
         resize: none;
         height: 193px;
@@ -2132,7 +2131,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    max-width: 829px;
+    // max-width: 829px;
     min-height: 332px;
 }
 .profile__content-items{
