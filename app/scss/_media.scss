@@ -25,6 +25,13 @@
    }
 }
 
+@media (max-width:970px){
+  .page__404-code::after {
+    width: 60px;
+    height: 115px;
+    background-size: cover;
+  }
+}
 @media (max-width:900px){
 
   .footer__item-col-social{
@@ -89,7 +96,12 @@
     }
   }
 }
-
+@media (max-width:740px){
+  .page__404-code{
+    font-size: 200px;
+    line-height: 200px;
+  }
+}
 @media (max-width:640px){
   .notification__box,
   .message__box{
