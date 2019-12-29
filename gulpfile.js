@@ -17,7 +17,12 @@ gulp.task('sass', function(){
             .pipe(gulp.dest('app/css'))
             .pipe(browserSync.reload({stream: true}))
 });
-
+gulp.task('main', function(){
+    return gulp.src('app/js/main.js')
+    .pipe(rename({suffix: '.min'}))
+    .pipe(uglify())
+    .pipe(gulp.dest('app/js'))
+});
 gulp.task('script', function(){
     return gulp.src([
         'node_modules/slick-carousel/slick/slick.js',
@@ -74,4 +79,4 @@ gulp.task('watch', function(){
     gulp.watch('app/js/*.js', gulp.parallel('js'))
 });
 
-gulp.task('default', gulp.parallel('sass', 'script', 'style', 'watch', 'browser-sync'))
+gulp.task('default', gulp.parallel('sass', 'script', 'main', 'style', 'watch', 'browser-sync'))
