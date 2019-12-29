@@ -1,4 +1,16 @@
 @media (max-width:1200px){
+    .page-products__inner{
+      display: block;
+    }
+    .top-sellers{
+      display: none;
+    }
+    .page-products__aside{
+      margin-right: 0;
+      .aside__item{
+        width: 100%;
+      }
+    }
     .withdrawals__inner{
       display: block;
       padding-bottom: 114px;
@@ -86,7 +98,17 @@
   }
 }
 @media (max-width:900px){
-
+  .page-products__items {
+    margin-left: -20px;
+    .product__item{
+      flex-basis: calc(50% - 20px);
+      margin-left: 20px;
+      margin-bottom: 20px;
+      &.list{
+        flex-basis: 100%;
+      }
+    }
+  }
   .footer__item-col-social{
     min-width: 100%;
     margin-top: 30px;
@@ -114,6 +136,9 @@
 }
 
 @media (max-width:842px){
+  .icon-th-list{
+    display: none;
+  }
   .menu__list{
     display: none;
     position: absolute;
@@ -186,6 +211,10 @@
   }
 }
 @media (max-width:640px){
+  .page-products__items .product__item{
+    flex-basis: 100%;
+    max-width: 100%;
+  }
   .notification__box,
   .message__box{
     display: none;
