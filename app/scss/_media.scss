@@ -514,15 +514,22 @@
     height: 70px;
   }
   .user__menu{
-    top: 60px;
+    top: 70px;
   }
   .basket__menu{
-    top: 52px;
+    top: 70px;
   }
   .product-one__img {
     min-height: 250px;
   }
+  .basket__box, 
+  .message__box, 
+  .notification__box,
+  .user__box {
+    height: 70px;
+  }
 }
+
 
 
 @media (max-width:495px){
@@ -550,12 +557,12 @@
   .user__img{
     margin-right: 0;
   }
-  .user__box{
-    margin-top: 56px;
-  }
-  .user__menu{
-    top: 52px;
-  }
+  // .user__box{
+  //   margin-top: 56px;
+  // }
+  // .user__menu{
+  //   top: 52px;
+  // }
   .contact__us-map {
     iframe{
       height: 250px;
