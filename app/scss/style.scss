@@ -203,7 +203,7 @@
     background-color: #fff;
     padding: 0 20px;
     z-index: 2;
-    top:70px;
+    top:90px;
     left: 20px;
     transition: all .3s;
     height: 0;
@@ -218,7 +218,8 @@
 .user__box{
     position: relative;
     height: 90px;
-    margin-top: 40px;
+    display: flex;
+    align-items: center;
     &:hover{
         .user__menu{
             height: auto;
@@ -233,7 +234,8 @@
 .notification__box{
     position: relative;
     height: 90px;
-    margin-top: 56px;
+    display: flex;
+    align-items: center;
     margin-left: 15px;
     &:hover{
         .basket__menu,
@@ -263,7 +265,7 @@
 .notification__menu{
     width: 268px;
     position: absolute;
-    top: 62px;
+    top: 90px;
     background-color: #fff;
     right: -4px;
     z-index: 2;
